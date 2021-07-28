@@ -1,0 +1,63 @@
+:root {
+  --background: #24463f;
+  --singlequote: #a03230;
+  --text: #9bc8ba;
+  --hyperlink: #daa124;
+  --bold: #cfb8a0;
+}
+
+body {
+  margin: 5% auto;
+  background: var(--background);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  text-shadow: 0 1px 0 var(--background);
+  max-width: 60%;
+}
+code {
+  background: var(--singlequote);
+  /* This is for `` style code  */
+}
+
+a{
+  border-bottom: 1px solid var(--hyperlink);
+  color: var(--hyperlink);
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 0;
+}
+
+b,
+strong {
+  color: var(--text);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--bold);
+}
+
+pre {
+  /* pre defines things inside a code block */
+   background-color: var(--singlequote);
+   /* border-radius: solid grey; */
+   /* border: var(--singlequote); this is actually the border around the text block.
+   There is another white color that wraps around that.  */
+ }
+
+ .highlight {
+   /* this defines the border around the code block */
+    background-color: var(--singlequote);
+}
+
+::selection { background: #daa124; }
